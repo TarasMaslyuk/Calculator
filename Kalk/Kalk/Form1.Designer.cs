@@ -133,6 +133,7 @@
             this.button6.TabIndex = 8;
             this.button6.Text = "e^x";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -142,6 +143,7 @@
             this.button7.TabIndex = 9;
             this.button7.Text = "sin x";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -151,6 +153,7 @@
             this.button8.TabIndex = 10;
             this.button8.Text = "ctg x";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -160,6 +163,7 @@
             this.button9.TabIndex = 11;
             this.button9.Text = "x^2";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 

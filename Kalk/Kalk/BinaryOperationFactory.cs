@@ -17,6 +17,12 @@ namespace Kalk
                     return new Multuplication();
                 case "Substracter":
                     return new Substracter();
+                case "Exp":
+                    return new Exp();
+                case "Sin": 
+                    return new Sin();
+                case "Ctg":
+                    return new Ctg();
                 default: 
                     throw new ArgumentException("Неизвесный калькулятор","name");
             }

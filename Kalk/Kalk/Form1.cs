@@ -86,5 +86,48 @@ namespace Kalk
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            double first=0;
+            double second=0;
+
+
+            first = Convert.ToDouble(textBox1.Text);
+            second = Convert.ToDouble(textBox2.Text);
+            IBinaryOperation exp = BinaryOperationFactory.CreateOperation("Exp");
+            textBox3.Text = exp.Calculate(first, second).ToString();
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            double first = 0;
+            double second = 0;
+
+
+            first = Convert.ToDouble(textBox1.Text);
+            second = Convert.ToDouble(textBox2.Text);
+            IBinaryOperation sin = BinaryOperationFactory.CreateOperation("Sin");
+            textBox3.Text = sin.Calculate(first, second).ToString();
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            double first ;
+            double second ;
+
+
+            first = Convert.ToDouble(textBox1.Text);
+            second = Convert.ToDouble(textBox2.Text);
+            IBinaryOperation ctg = BinaryOperationFactory.CreateOperation("Ctg");
+            textBox3.Text = ctg.Calculate(first, second).ToString();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
