@@ -79,12 +79,20 @@ namespace Kalk
 
         private void button13_Click(object sender, EventArgs e)
         {
+            double first;
 
+            first = Convert.ToDouble(textBox1.Text);
+            IUnitOperation log10 = UnitOperationFactory.CreateOperation("Log10");
+            textBox3.Text = log10.Calculate(first).ToString();
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
+            double first;
 
+            first = Convert.ToDouble(textBox1.Text);
+            IUnitOperation cos = UnitOperationFactory.CreateOperation("Cos");
+            textBox3.Text = cos.Calculate(first).ToString();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -149,6 +157,44 @@ namespace Kalk
                 IBinaryOperation log = BinaryOperationFactory.CreateOperation("Log");
                 textBox3.Text = log.Calculate(first, second).ToString();
             
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            double first;
+
+            first = Convert.ToDouble(textBox1.Text);
+            IUnitOperation sqrt = UnitOperationFactory.CreateOperation("Sqrt");
+            textBox3.Text = sqrt.Calculate(first).ToString();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            double first;
+
+            first = Convert.ToDouble(textBox1.Text);
+            IUnitOperation tg = UnitOperationFactory.CreateOperation("Tg");
+            textBox3.Text = tg.Calculate(first).ToString();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            
+                double first;
+
+                first = Convert.ToDouble(textBox1.Text);
+                IUnitOperation asin = UnitOperationFactory.CreateOperation("Asin");
+                textBox3.Text = asin.Calculate(first).ToString();
+            
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            double first;
+
+            first = Convert.ToDouble(textBox1.Text);
+            IUnitOperation atan = UnitOperationFactory.CreateOperation("Atg");
+            textBox3.Text = atan.Calculate(first).ToString();
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Kalk
                     return new Substracter();
                 case "Degree":
                     return new Degree();
-                case"Log":
+                case "Log":
                     return new Log();
                 default: 
                     throw new ArgumentException("Неизвесный калькулятор","name");

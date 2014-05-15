@@ -202,6 +202,7 @@
             this.button12.TabIndex = 15;
             this.button12.Text = "sqrt";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -231,6 +232,7 @@
             this.button15.TabIndex = 18;
             this.button15.Text = "tg x";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -240,6 +242,7 @@
             this.button16.TabIndex = 19;
             this.button16.Text = "arcsin x";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 
@@ -249,6 +252,7 @@
             this.button17.TabIndex = 20;
             this.button17.Text = "arctg x";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // Form1
             // 

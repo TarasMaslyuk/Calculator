@@ -46,7 +46,10 @@
   <ItemGroup>
     <Compile Include="Acos.cs" />
     <Compile Include="Adder.cs" />
+    <Compile Include="Asin.cs" />
+    <Compile Include="Atg.cs" />
     <Compile Include="BinaryOperationFactory.cs" />
+    <Compile Include="Cos.cs" />
     <Compile Include="Ctg.cs" />
     <Compile Include="Degree.cs" />
     <Compile Include="Divider.cs" />
@@ -61,11 +64,14 @@
     <Compile Include="Interface1.cs" />
     <Compile Include="IUnitOperation.cs" />
     <Compile Include="Log.cs" />
+    <Compile Include="Log10.cs" />
     <Compile Include="Multuplication.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sin.cs" />
+    <Compile Include="Sqrt.cs" />
     <Compile Include="Substracter.cs" />
+    <Compile Include="Tg.cs" />
     <Compile Include="UnitOperationFactory.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

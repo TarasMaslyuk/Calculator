@@ -21,8 +21,18 @@ namespace Kalk
                     return new Ctg();
                 case "Acos":
                     return new Acos();
-        
-         
+                case "Sqrt":
+                    return new Sqrt();
+                case "Log10":
+                    return new Log10();
+                case "Cos":
+                    return new Cos();
+                case "Tg":
+                    return new Tg();
+                case "Asin":
+                    return new Asin();
+                case"Atg":
+                    return new Atg();
                 default:throw new ArgumentException("Неизвесный калькулятор", "name");
             }
         }
