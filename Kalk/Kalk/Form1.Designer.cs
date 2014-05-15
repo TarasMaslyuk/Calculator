@@ -161,7 +161,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 11;
-            this.button9.Text = "x^2";
+            this.button9.Text = "x^y";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -171,8 +171,9 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 12;
-            this.button10.Text = "2^x";
+            this.button10.Text = "arccos x";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -180,8 +181,9 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 13;
-            this.button11.Text = "log 2";
+            this.button11.Text = "log ";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label1
             // 
@@ -207,7 +209,7 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(75, 23);
             this.button13.TabIndex = 16;
-            this.button13.Text = "x^y";
+            this.button13.Text = "log  10";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
@@ -245,7 +247,7 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(75, 23);
             this.button17.TabIndex = 20;
-            this.button17.Text = "10^x";
+            this.button17.Text = "arctg x";
             this.button17.UseVisualStyleBackColor = true;
             // 
             // Form1

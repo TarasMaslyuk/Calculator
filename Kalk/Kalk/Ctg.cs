@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Kalk
 {
-    public class Ctg : IBinaryOperation
+    public class Ctg : IUnitOperation
     {
-        public double Calculate(double first, double second)
+        public double Calculate(double first)
         {
             double result;
-            result = Math.Cos(first + second)/Math.Sin(first + second);
+            result = Math.Cos(first )/Math.Sin(first );
             return result;
 
         }

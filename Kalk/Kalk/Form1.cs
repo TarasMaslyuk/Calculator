@@ -89,45 +89,66 @@ namespace Kalk
 
         private void button6_Click(object sender, EventArgs e)
         {
-            double first=0;
-            double second=0;
-
-
+            double first;
+      
             first = Convert.ToDouble(textBox1.Text);
-            second = Convert.ToDouble(textBox2.Text);
-            IBinaryOperation exp = BinaryOperationFactory.CreateOperation("Exp");
-            textBox3.Text = exp.Calculate(first, second).ToString();
+            IUnitOperation exp = UnitOperationFactory.CreateOperation("Exp");
+            textBox3.Text = exp.Calculate(first).ToString();
 
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             double first = 0;
-            double second = 0;
-
-
+           
             first = Convert.ToDouble(textBox1.Text);
-            second = Convert.ToDouble(textBox2.Text);
-            IBinaryOperation sin = BinaryOperationFactory.CreateOperation("Sin");
-            textBox3.Text = sin.Calculate(first, second).ToString();
+            IUnitOperation sin = UnitOperationFactory.CreateOperation("Sin");
+            textBox3.Text = sin.Calculate(first).ToString();
 
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             double first ;
-            double second ;
-
-
+           
             first = Convert.ToDouble(textBox1.Text);
-            second = Convert.ToDouble(textBox2.Text);
-            IBinaryOperation ctg = BinaryOperationFactory.CreateOperation("Ctg");
-            textBox3.Text = ctg.Calculate(first, second).ToString();
+            IUnitOperation ctg = UnitOperationFactory.CreateOperation("Ctg");
+            textBox3.Text = ctg.Calculate(first).ToString();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
+            double first;
+            double second;
 
+
+            first = Convert.ToDouble(textBox1.Text);
+            second = Convert.ToDouble(textBox2.Text);
+            IBinaryOperation degree = BinaryOperationFactory.CreateOperation("Degree");
+            textBox3.Text = degree.Calculate(first, second).ToString();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            double first;
+          
+            first = Convert.ToDouble(textBox1.Text);
+            IUnitOperation acos = UnitOperationFactory.CreateOperation("Acos");
+            textBox3.Text = acos.Calculate(first).ToString();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            
+                double first;
+                double second;
+
+
+                first = Convert.ToDouble(textBox1.Text);
+                second = Convert.ToDouble(textBox2.Text);
+                IBinaryOperation log = BinaryOperationFactory.CreateOperation("Log");
+                textBox3.Text = log.Calculate(first, second).ToString();
+            
         }
     }
 }

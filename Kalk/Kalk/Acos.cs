@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Kalk
 {
-    public class Exp: IUnitOperation
+    public class Acos : IUnitOperation
     {
         public double Calculate(double first)
         {
             double result;
-            result = Math.Exp(first);
+            result = Math.Acos(first);
             return result;
 
         }

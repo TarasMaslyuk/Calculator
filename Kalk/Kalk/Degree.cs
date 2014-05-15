@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Kalk
 {
-    public class Exp: IUnitOperation
+    public class Degree : IBinaryOperation
     {
-        public double Calculate(double first)
+        public double Calculate(double first, double second)
         {
             double result;
-            result = Math.Exp(first);
+            result = Math.Pow(first,second);
             return result;
 
         }
