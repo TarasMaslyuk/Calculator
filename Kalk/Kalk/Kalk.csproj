@@ -44,35 +44,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Acos.cs" />
-    <Compile Include="Adder.cs" />
-    <Compile Include="Asin.cs" />
-    <Compile Include="Atg.cs" />
-    <Compile Include="BinaryOperationFactory.cs" />
-    <Compile Include="Cos.cs" />
-    <Compile Include="Ctg.cs" />
-    <Compile Include="Degree.cs" />
-    <Compile Include="Divider.cs" />
-    <Compile Include="Exp.cs" />
+    <Compile Include="UnitFunctions\Acos.cs" />
+    <Compile Include="BinaryFuctions\Adder.cs" />
+    <Compile Include="UnitFunctions\Asin.cs" />
+    <Compile Include="UnitFunctions\Atg.cs" />
+    <Compile Include="Factories\BinaryOperationFactory.cs" />
+    <Compile Include="UnitFunctions\Cos.cs" />
+    <Compile Include="UnitFunctions\Ctg.cs" />
+    <Compile Include="BinaryFuctions\Degree.cs" />
+    <Compile Include="BinaryFuctions\Divider.cs" />
+    <Compile Include="UnitFunctions\Exp.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IBinaryOperation.cs" />
-    <Compile Include="Interface1.cs" />
-    <Compile Include="IUnitOperation.cs" />
-    <Compile Include="Log.cs" />
-    <Compile Include="Log10.cs" />
-    <Compile Include="Multuplication.cs" />
+    <Compile Include="Intefaces\IBinaryOperation.cs" />
+    <Compile Include="Intefaces\IUnitOperation.cs" />
+    <Compile Include="BinaryFuctions\Log.cs" />
+    <Compile Include="UnitFunctions\Log10.cs" />
+    <Compile Include="BinaryFuctions\Multuplication.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sin.cs" />
-    <Compile Include="Sqrt.cs" />
-    <Compile Include="Substracter.cs" />
-    <Compile Include="Tg.cs" />
-    <Compile Include="UnitOperationFactory.cs" />
+    <Compile Include="UnitFunctions\Sin.cs" />
+    <Compile Include="UnitFunctions\Sqrt.cs" />
+    <Compile Include="BinaryFuctions\Substracter.cs" />
+    <Compile Include="UnitFunctions\Tg.cs" />
+    <Compile Include="Factories\UnitOperationFactory.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
