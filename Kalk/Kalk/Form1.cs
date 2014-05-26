@@ -196,5 +196,22 @@ namespace Kalk
             IUnitOperation atan = UnitOperationFactory.CreateOperation("Atg");
             textBox3.Text = atan.Calculate(first).ToString();
         }
+         
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            string[] mass = textBox1.Text.Split(' ');
+            int[] array = mass.Select(m => Convert.ToInt32(m)).ToArray();
+            ISortingOperation max = SortingOperationFactory.CreateSortingOperation("Max");
+            textBox3.Text = string.Join(" ", max.Sort(array));
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            string[] mass = textBox1.Text.Split(' ');
+            int[] array = mass.Select(m => Convert.ToInt32(m)).ToArray();
+            ISortingOperation min = SortingOperationFactory.CreateSortingOperation("Min");
+            textBox3.Text = string.Join(" ", min.Sort(array));
+        }
     }
 }

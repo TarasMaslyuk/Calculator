@@ -44,6 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SortingOperations\ISortingOperation.cs" />
+    <Compile Include="SortingOperations\SortingAscending.cs" />
+    <Compile Include="SortingOperations\SortingDescending.cs" />
+    <Compile Include="SortingOperations\SortingOperationFactory.cs" />
     <Compile Include="UnitFunctions\Acos.cs" />
     <Compile Include="BinaryFuctions\Adder.cs" />
     <Compile Include="UnitFunctions\Asin.cs" />
@@ -97,6 +101,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
