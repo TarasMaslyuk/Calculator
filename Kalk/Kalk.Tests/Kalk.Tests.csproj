@@ -49,6 +49,16 @@
     <Compile Include="BinaryFuctions\MultuplicationTests.cs" />
     <Compile Include="BinaryFuctions\SubstracterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitFunctions\AcosTests.cs" />
+    <Compile Include="UnitFunctions\AsinTest.cs" />
+    <Compile Include="UnitFunctions\AtgTests.cs" />
+    <Compile Include="UnitFunctions\Cos.cs" />
+    <Compile Include="UnitFunctions\CtgTest.cs" />
+    <Compile Include="UnitFunctions\ExpTests.cs" />
+    <Compile Include="UnitFunctions\Log10Tests.cs" />
+    <Compile Include="UnitFunctions\SinTests.cs" />
+    <Compile Include="UnitFunctions\SqrtTests.cs" />
+    <Compile Include="UnitFunctions\TgTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
