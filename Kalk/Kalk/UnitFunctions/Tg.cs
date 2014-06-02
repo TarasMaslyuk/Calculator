@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Kalk.Intefaces;
 
-namespace Kalk
+namespace Kalk.UnitFunctions
 {
     public class Tg : IUnitOperation
     {
         public double Calculate(double first)
         {
+            if (first==Math.PI/2 || first==-Math.PI/2)
+            {
+                throw new Exception("Argument is not in the acceptable range!");
+            }
             double result;
             result = Math.Tan(first);
             return result;

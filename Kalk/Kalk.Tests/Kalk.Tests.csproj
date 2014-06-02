@@ -52,7 +52,7 @@
     <Compile Include="UnitFunctions\AcosTests.cs" />
     <Compile Include="UnitFunctions\AsinTest.cs" />
     <Compile Include="UnitFunctions\AtgTests.cs" />
-    <Compile Include="UnitFunctions\Cos.cs" />
+    <Compile Include="UnitFunctions\CosTests.cs" />
     <Compile Include="UnitFunctions\CtgTest.cs" />
     <Compile Include="UnitFunctions\ExpTests.cs" />
     <Compile Include="UnitFunctions\Log10Tests.cs" />

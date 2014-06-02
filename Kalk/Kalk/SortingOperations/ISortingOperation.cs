@@ -1,4 +1,4 @@
-﻿namespace Kalk
+﻿namespace Kalk.SortingOperations
 {
     public interface ISortingOperation
     {

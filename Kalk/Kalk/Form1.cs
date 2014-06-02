@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Kalk.Factories;
+using Kalk.Intefaces;
+using Kalk.SortingOperations;
 
 namespace Kalk
 {
@@ -22,56 +19,63 @@ namespace Kalk
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BinaryCalculate(string calculatorName)
         {
-            double first;
-            double second;
-
-
-            first = Convert.ToDouble(textBox1.Text);
-            second = Convert.ToDouble(textBox2.Text);
-            IBinaryOperation adder = BinaryOperationFactory.CreateOperation("Adder");
-            textBox3.Text = adder.Calculate(first, second).ToString();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-            double first;
-            double second;
-
-
-            first = Convert.ToDouble(textBox1.Text);
-            second = Convert.ToDouble(textBox2.Text);
-            IBinaryOperation substracter = BinaryOperationFactory.CreateOperation("Substracter");
-            textBox3.Text = substracter.Calculate(first, second).ToString();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-            double first;
-            double second;
-
-
-            first = Convert.ToDouble(textBox1.Text);
-            second = Convert.ToDouble(textBox2.Text);
-            IBinaryOperation multuplication = BinaryOperationFactory.CreateOperation("Multuplication");
-            textBox3.Text = multuplication.Calculate(first, second).ToString();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+            try
             {
-
                 double first;
                 double second;
 
 
                 first = Convert.ToDouble(textBox1.Text);
                 second = Convert.ToDouble(textBox2.Text);
-                IBinaryOperation divider = BinaryOperationFactory.CreateOperation("Divider");
-                textBox3.Text = divider.Calculate(first, second).ToString();
+                IBinaryOperation adder = BinaryOperationFactory.CreateOperation(calculatorName);
+                textBox3.Text = adder.Calculate(first, second).ToString();
             }
+            catch (Exception e)
+            {
+                textBox3.Text = e.Message;
+            }
+        }
+
+        private void UnitCalculate(string calculatorName)
+        {
+            try
+            {
+                double first;
+
+                first = Convert.ToDouble(textBox1.Text);
+                IUnitOperation uo = UnitOperationFactory.CreateOperation(calculatorName);
+                textBox3.Text = uo.Calculate(first).ToString();
+            }
+            catch (Exception e)
+            {
+                textBox3.Text = e.Message;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BinaryCalculate("Adder");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            BinaryCalculate("Substracter");
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            BinaryCalculate("Multuplication");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            BinaryCalculate("Divider");
+        }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -79,124 +83,64 @@ namespace Kalk
 
         private void button13_Click(object sender, EventArgs e)
         {
-            double first;
-
-            first = Convert.ToDouble(textBox1.Text);
-            IUnitOperation log10 = UnitOperationFactory.CreateOperation("Log10");
-            textBox3.Text = log10.Calculate(first).ToString();
+            UnitCalculate("Log10");
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            double first;
-
-            first = Convert.ToDouble(textBox1.Text);
-            IUnitOperation cos = UnitOperationFactory.CreateOperation("Cos");
-            textBox3.Text = cos.Calculate(first).ToString();
+            UnitCalculate("Cos");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            double first;
-      
-            first = Convert.ToDouble(textBox1.Text);
-            IUnitOperation exp = UnitOperationFactory.CreateOperation("Exp");
-            textBox3.Text = exp.Calculate(first).ToString();
-
+            UnitCalculate("Exp");
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            double first = 0;
-           
-            first = Convert.ToDouble(textBox1.Text);
-            IUnitOperation sin = UnitOperationFactory.CreateOperation("Sin");
-            textBox3.Text = sin.Calculate(first).ToString();
-
+            UnitCalculate("Sin");
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            double first ;
-           
-            first = Convert.ToDouble(textBox1.Text);
-            IUnitOperation ctg = UnitOperationFactory.CreateOperation("Ctg");
-            textBox3.Text = ctg.Calculate(first).ToString();
+            UnitCalculate("Ctg");
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            double first;
-            double second;
-
-
-            first = Convert.ToDouble(textBox1.Text);
-            second = Convert.ToDouble(textBox2.Text);
-            IBinaryOperation degree = BinaryOperationFactory.CreateOperation("Degree");
-            textBox3.Text = degree.Calculate(first, second).ToString();
+            BinaryCalculate("Degree");
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            double first;
-          
-            first = Convert.ToDouble(textBox1.Text);
-            IUnitOperation acos = UnitOperationFactory.CreateOperation("Acos");
-            textBox3.Text = acos.Calculate(first).ToString();
+            UnitCalculate("Acos");
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            
-                double first;
-                double second;
-
-
-                first = Convert.ToDouble(textBox1.Text);
-                second = Convert.ToDouble(textBox2.Text);
-                IBinaryOperation log = BinaryOperationFactory.CreateOperation("Log");
-                textBox3.Text = log.Calculate(first, second).ToString();
-            
+            BinaryCalculate("Log");
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            double first;
-
-            first = Convert.ToDouble(textBox1.Text);
-            IUnitOperation sqrt = UnitOperationFactory.CreateOperation("Sqrt");
-            textBox3.Text = sqrt.Calculate(first).ToString();
+            UnitCalculate("Sqrt");
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            double first;
-
-            first = Convert.ToDouble(textBox1.Text);
-            IUnitOperation tg = UnitOperationFactory.CreateOperation("Tg");
-            textBox3.Text = tg.Calculate(first).ToString();
+            UnitCalculate("Tg");
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            
-                double first;
-
-                first = Convert.ToDouble(textBox1.Text);
-                IUnitOperation asin = UnitOperationFactory.CreateOperation("Asin");
-                textBox3.Text = asin.Calculate(first).ToString();
-            
+            UnitCalculate("Asin");
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            double first;
-
-            first = Convert.ToDouble(textBox1.Text);
-            IUnitOperation atan = UnitOperationFactory.CreateOperation("Atg");
-            textBox3.Text = atan.Calculate(first).ToString();
+            UnitCalculate("Atg");
         }
-         
+
 
         private void button18_Click(object sender, EventArgs e)
         {

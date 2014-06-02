@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kalk
+namespace Kalk.SortingOperations
 {
     public static class SortingOperationFactory
     {

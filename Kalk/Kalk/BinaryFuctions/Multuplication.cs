@@ -1,4 +1,6 @@
-﻿namespace Kalk
+﻿using Kalk.Intefaces;
+
+namespace Kalk.BinaryFuctions
 {
     public class Multuplication : IBinaryOperation
     {

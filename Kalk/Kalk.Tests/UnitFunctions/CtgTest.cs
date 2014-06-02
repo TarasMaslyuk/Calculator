@@ -1,4 +1,6 @@
 ﻿using System;
+using Kalk.Factories;
+using Kalk.Intefaces;
 using NUnit.Framework;
 
 namespace Kalk.Tests.UnitFunctions

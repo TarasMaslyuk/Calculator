@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using Kalk.Intefaces;
+using Kalk.UnitFunctions;
 
-namespace Kalk
+namespace Kalk.Factories
 {
     public static class UnitOperationFactory
     {

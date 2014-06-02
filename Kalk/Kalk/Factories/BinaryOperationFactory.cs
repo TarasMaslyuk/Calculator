@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Collections;
+using Kalk.BinaryFuctions;
+using Kalk.Intefaces;
 
-namespace Kalk
+namespace Kalk.Factories
 {
     public static class BinaryOperationFactory
     {

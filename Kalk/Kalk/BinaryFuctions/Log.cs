@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Kalk.Intefaces;
 
-namespace Kalk
+namespace Kalk.BinaryFuctions
 {
     public class Log : IBinaryOperation
     {
         public double Calculate(double first, double second)
         {
+            if (first < 0 || first == 1 || second<0)
+            {
+                throw new Exception("Argument is not in the acceptable range!");
+            }
             double result;
             result = Math.Log(first, second);
             return result;

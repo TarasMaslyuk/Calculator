@@ -1,4 +1,4 @@
-﻿namespace Kalk
+﻿namespace Kalk.Intefaces
 {
     public interface IUnitOperation
     {
