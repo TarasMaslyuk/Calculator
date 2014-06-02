@@ -43,6 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinaryFuctions\AdderTests.cs" />
+    <Compile Include="BinaryFuctions\LogTests.cs" />
+    <Compile Include="BinaryFuctions\DegreeTests.cs" />
+    <Compile Include="BinaryFuctions\DividerTests.cs" />
+    <Compile Include="BinaryFuctions\MultuplicationTests.cs" />
+    <Compile Include="BinaryFuctions\SubstracterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
